@@ -21,6 +21,7 @@ const Pagination: React.FC<PaginationProps> = ({
           disabled={currentPage === 1 || isDisabled}
           className="px-4 py-2 bg-transparent border border-[var(--foreground)] text-[var(--foreground)] rounded-full disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-colors duration-300"
           aria-label="Previous page"
+          data-testid="previous-button"
         >
           Previous
         </button>
@@ -32,6 +33,7 @@ const Pagination: React.FC<PaginationProps> = ({
           disabled={currentPage === totalPages || isDisabled}
           className="px-4 py-2 bg-transparent border border-[var(--foreground)] text-[var(--foreground)] rounded-full disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[var(--foreground)] hover:text-[var(--background)] transition-colors duration-300"
           aria-label="Next page"
+          data-testid="next-button"
         >
           Next
         </button>
