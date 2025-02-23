@@ -1,6 +1,6 @@
 "use client";
 
-import { Vehicle } from "@/app/lib/vehicleData";
+import { Vehicle } from "@/lib/vehicleData";
 import Link from "next/link";
 import ImageGallery from "./ImageGallery";
 import VehicleInfoTable from "./VehicleInfoTable";

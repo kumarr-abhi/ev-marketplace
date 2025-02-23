@@ -1,5 +1,5 @@
 import VehicleListing from "@/components/VehicleListing";
-import { getVehicles } from "./lib/vehicleData";
+import { getVehicles } from "@/lib/vehicleData";
 
 export default async function Home() {
   const vehicles = await getVehicles();

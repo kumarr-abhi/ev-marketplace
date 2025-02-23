@@ -1,4 +1,4 @@
-import { Vehicle } from "@/app/lib/vehicleData";
+import { Vehicle } from "@/lib/vehicleData";
 
 export function filterVehicles(vehicles: Vehicle[], searchTerm: string): Vehicle[] {
   return vehicles.filter((vehicle) =>

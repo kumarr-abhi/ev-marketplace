@@ -1,4 +1,4 @@
-import { getVehicleById } from "@/app/lib/vehicleData";
+import { getVehicleById } from "@/lib/vehicleData";
 import VehicleDetail from "@/components/VehicleDetail";
 
 export default async function VehicleDetailPage({

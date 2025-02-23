@@ -23,7 +23,7 @@ export interface Vehicle {
 
 export async function getVehicles(): Promise<Vehicle[]> {
   return new Promise(async (resolve) => {
-    const vehicleDataWithoutId = await import("../data/vehicles.json");
+    const vehicleDataWithoutId = await import("@/app/data/vehicles.json");
     const vehicleData = vehicleDataWithoutId?.data.map((vehicle, index) => ({
       id: index + 1 + "",
       ...vehicle,

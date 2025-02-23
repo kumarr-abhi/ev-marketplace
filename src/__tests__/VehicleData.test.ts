@@ -1,4 +1,4 @@
-import { getVehicles, getVehicleById } from "../app/lib/vehicleData";
+import { getVehicles, getVehicleById } from "@/lib/vehicleData";
 
 jest.mock("../app/data/vehicles.json", () => ({
   count: 45,

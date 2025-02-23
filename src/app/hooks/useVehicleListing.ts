@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Vehicle } from "@/app/lib/vehicleData";
+import { Vehicle } from "@/lib/vehicleData";
 
 export function useVehicleListing(initialVehicles: Vehicle[]) {
   const [vehicles, setVehicles] = useState(initialVehicles);

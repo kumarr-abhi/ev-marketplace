@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useCallback } from "react";
-import { Vehicle } from "@/app/lib/vehicleData";
+import { Vehicle } from "@/lib/vehicleData";
 import VehicleCard from "./VehicleCard";
 import SearchBar from "./SearchBar";
 import SortSelect from "./SortSelector";

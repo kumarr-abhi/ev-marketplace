@@ -1,4 +1,4 @@
-import { Vehicle } from "@/app/lib/vehicleData";
+import { Vehicle } from "@/lib/vehicleData";
 import Image from "next/image";
 import Link from "next/link";
 
