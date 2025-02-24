@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Vehicle } from "@/lib/vehicleData";
 
 export function useVehicleListing(initialVehicles: Vehicle[]) {
-  const [vehicles, setVehicles] = useState(initialVehicles);
+  const [vehicles] = useState(initialVehicles);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("default");
