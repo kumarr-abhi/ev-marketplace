@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+README
+
+# Electric Vehicle Marketplace
+
+This Next.js application showcases electric vehicles for sale, providing a responsive and user-friendly interface for browsing and exploring electric vehicle options.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `app/`: Next.js app router files, data, hooks and utility functions
+- `components/`: Reusable React components
+- `lib/`: data fetching
+- `public/`: Static assets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features and Decisions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js Framework**: Utilized for server-side rendering, improved SEO, and efficient routing.
+- **Image Zoom Functionality**: Implemented for enhanced user experience when viewing vehicle details.
+- **Reusable Components**: Extracted common elements for better maintainability and code organization.
+- **Tailwind CSS**: Employed for responsive design and rapid development of UI components.
+- **Performance Optimization**: Implemented code splitting and lazy loading for faster initial page loads.
+- **Accessibility**: Basic ARIA labels and keyboard navigation implemented for improved accessibility.
 
-## Learn More
+## Testing
 
-To learn more about Next.js, take a look at the following resources:
+Run tests with: `npm test`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+My testing approach includes:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Unit tests for individual components
+- Jest as the testing framework
 
-## Deploy on Vercel
+To run the project:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Follow the "Getting Started" instructions above
+2. Access the application at `http://localhost:3000`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To run tests:
+
+1. Ensure all dependencies are installed
+2. Run `npm test` in the project root directory
+
+## Docker Deployment
+
+To run this project using Docker, follow these steps:
+
+1. Ensure Docker is installed and running on your system.
+
+2. Open a terminal and navigate to the project's root directory.
+
+3. Build the Docker image:
+
+   ```
+   docker build -t nextjs-app .
+   ```
+
+4. Run the Docker container:
+
+   ```
+   docker run --rm -p 3000:3000 --name nextjs-container nextjs-app
+   ```
+
+5. Access the application by opening a web browser and navigating to:
+
+   ```
+   http://localhost:3000
+   ```
+
+6. To stop the container, press Ctrl+C in the terminal or run:
+   ```
+   docker stop nextjs-container
+   ```
+
+Alternatively, if using Docker Compose:
+
+1. Ensure you have a `docker-compose.yml` file in your project root.
+
+2. Build and start the containers:
+
+   ```
+   docker-compose up --build
+   ```
+
+3. Access the application at `http://localhost:3000`.
+
+4. To stop and remove the containers, use:
+   ```
+   docker-compose down
+   ```
+
+Remember to rebuild the image if you make changes to your application code.
